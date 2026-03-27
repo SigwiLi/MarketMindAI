@@ -1,0 +1,41 @@
+{
+  "created": "2026-03-27T16:34:38.469270Z",
+  "description": "RAG-ready text chunks from three financial-fraud datasets.",
+  "total_chunks": 16,
+  "sources": [
+    {
+      "file": "rag_ftc_csn_2024.jsonl",
+      "source_name": "FTC Consumer Sentinel Network Data Book 2024",
+      "source_url": "https://www.ftc.gov/reports/consumer-sentinel-network-data-book-2024",
+      "publication_date": "2025-03-01",
+      "chunk_count": 4,
+      "notes": "Aggregated consumer fraud report data. Raw CSV files downloadable at https://www.ftc.gov/system/files/ftc_gov/data/csn-data-book-2024-csv.zip"
+    },
+    {
+      "file": "rag_ftc_explore_data.jsonl",
+      "source_name": "FTC Explore Data — Interactive Sentinel Dashboards",
+      "source_url": "https://www.ftc.gov/news-events/data-visualizations/explore-data",
+      "publication_date": "2025-01-01",
+      "chunk_count": 3,
+      "notes": "Landing page and methodology for the FTC's Tableau-based interactive dashboards. Data updated quarterly."
+    },
+    {
+      "file": "rag_csi_iowa_fraud_2025.jsonl",
+      "source_name": "CSI Iowa: The Impact of Financial Fraud in Iowa (August 2025)",
+      "source_url": "https://www.commonsenseinstituteus.org/ResearchUploads/CSI%20Report%20-%20IA%20Financial%20Fraud%20FINAL.pdf",
+      "publication_date": "2025-08-01",
+      "chunk_count": 9,
+      "notes": "Full-text extraction from PDF report. Covers Iowa-specific fraud statistics, demographics, economic impact modelling."
+    }
+  ],
+  "schema": {
+    "id": "Unique chunk identifier (string)",
+    "source_name": "Human-readable source title",
+    "source_url": "Canonical URL of the source document",
+    "publication_date": "ISO-8601 publication date",
+    "section": "Sub-section heading within the source document",
+    "topic_tags": "List of topical keyword tags for filtering/retrieval",
+    "word_count": "Approximate word count of the text field",
+    "text": "Cleaned, chunk-level text ready for embedding"
+  }
+}
